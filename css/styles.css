@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   background-color: #ffffff;
 }
+.header {border: 1px solid #ECECEC;}
 :root {
   --brand-color: #2196f3;
   --brand-background-color: #2f303a;
@@ -65,9 +66,17 @@ margin-bottom: 9px;}
   background-color: #f5f4fa;
 }
 .section5 .ul {justify-content: center;}
+.section5 li:not(:last-child) {margin-right: 8px;}
 .footer {
   background-color: var(--brand-background-color);
 }
+.section5 {padding-bottom: 0px;}
+.section6 {padding-top: 50px;}
+.section6 .ul {flex-wrap: wrap;}
+.section6 li {flex-basis: calc(100% / 3 - 10px)}
+.section6 figure {margin-left: 10px;
+  margin-right: 0px;}
+
 
 .address {
   color: #fff;
@@ -221,12 +230,19 @@ header li:not(:last-child) {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
+  margin-top: -4px;
+  padding-left: 24px;
+  padding-top: 20px;
 }
 .category {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--brand-color2);
+  margin-top: 4px;
+  padding-left: 24px;
+  margin-bottom: 20px;
 }
 .person {
   font-weight: 500;
@@ -251,6 +267,9 @@ header li:not(:last-child) {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.subtittle {border-right: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;}
 .ul {
   list-style: none;
   display: flex;
